@@ -390,8 +390,8 @@ function Header() {
 export async function getStaticProps() {
   const locations = [
     {
-      key: "midtown-cinemas-pokhara"
-      title: "Midtown Cinemas Pokhara",
+      key:  "cgv-jaksel",
+      title: "CGV Jakarta Selatan",
     },
     {
       key: "cgv-pvj-bandung",
