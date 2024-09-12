@@ -45,7 +45,7 @@ function TicketResult() {
               <div className="flex-1 flex flex-col border border-black border-r-0 rounded-s-lg overflow-hidden">
                 <span className="w-full flex items-center bg-primary px-4 md:px-5 py-2">
                   <Image
-                    src="/images/Tickitz-2.svg"
+                    src="/images/z-2.svg"
                     alt="Logo"
                     width={105}
                     height={29}

@@ -205,7 +205,7 @@ function Header() {
               ) : (
                 <div>
                   <button
-                    className="btn btn-primary text-white btn-sm h-10 m-auto"
+                    className="btn bg-black text-white btn-sm h-10 m-auto"
                     onClick={() => navigate("/signup")}
                   >
                     Sign Up
