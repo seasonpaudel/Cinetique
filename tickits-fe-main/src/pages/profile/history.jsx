@@ -51,7 +51,7 @@ function History() {
             <div className="pt-8 px-8 pb-20">
               <p className="mb-6">Loyalty Points</p>
               <div className="w-[80%] md:w-[45%] lg:w-full bg-gradient-to-r from-primary to-primary/80 bg-gradient-to-right-top px-4 py-6 rounded-lg text-white">
-                <p>Moviegoers</p>
+                <p>s</p>
                 <p className="text-2xl mt-5">
                   320 <span className="text-xs">points</span>
                 </p>

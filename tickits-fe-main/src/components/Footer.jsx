@@ -43,8 +43,8 @@ function Footer() {
             <Link href={"/"} className="mb-3">
               <Image
                 src={"/images/cineone21.svg"}
-                width={174}
-                height={27}
+                width={122}
+                height={46}
                 className="h-6 md:h-auto"
                 alt=""
               ></Image>
@@ -52,8 +52,8 @@ function Footer() {
             <Link href={"/"} className="mb-3 px-5 md:px-0">
               <Image
                 src={"/images/hiflix.svg"}
-                width={80}
-                height={25}
+                width={125}
+                height={49}
                 className="h-6 md:h-auto"
                 alt=""
               ></Image>
@@ -79,7 +79,7 @@ function Footer() {
                   className="fill-primary"
                 />
               </svg>
-              <p className="hidden md:inline-block">Tickitz Cinema id</p>
+              <p className="hidden md:inline-block text-black">Cinetique</p>
             </Link>
             <Link
               href={"/"}
@@ -106,7 +106,7 @@ function Footer() {
                 />
               </svg>
 
-              <p className="hidden md:inline-block">tickitz.id</p>
+              <p className="hidden md:inline-block text-black">cinetique.np</p>
             </Link>
             <Link
               href={"/"}
@@ -125,7 +125,7 @@ function Footer() {
                 />
               </svg>
 
-              <p className="hidden md:inline-block">tickitz.id</p>
+              <p className="hidden md:inline-block text-black">cinetique.np</p>
             </Link>
             <Link
               href={"/"}
@@ -154,13 +154,13 @@ function Footer() {
                 />
               </svg>
 
-              <p className="hidden md:inline-block">Tickits Cinema Id</p>
+              <p className="hidden md:inline-block text-black">Cinetique</p>
             </Link>
           </div>
         </div>
       </div>
       <div className="flex items-center justify-center text-center px-10 pb-10">
-        © 2023 Tickitz. All Rights Reserved.
+        © 2024 Cinetique. All Rights Reserved.
       </div>
     </footer>
   );
