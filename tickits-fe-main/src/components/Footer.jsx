@@ -42,7 +42,7 @@ function Footer() {
             </Link>
             <Link href={"/"} className="mb-3">
               <Image
-                src={"/images/cineone21.svg"}
+                src={"/images/cdc.svg"}
                 width={174}
                 height={27}
                 className="h-6 md:h-auto"
@@ -51,7 +51,7 @@ function Footer() {
             </Link>
             <Link href={"/"} className="mb-3 px-5 md:px-0">
               <Image
-                src={"/images/hiflix.svg"}
+                src={"/images/qfx.svg"}
                 width={80}
                 height={25}
                 className="h-6 md:h-auto"
