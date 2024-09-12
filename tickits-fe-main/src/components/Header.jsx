@@ -16,12 +16,12 @@ function Header() {
   ];
   const locations = [
     {
-      key: "cgv-jaksel",
-      title: "CGV Jakarta Selatan",
+      key: "midtown-cinemas-pokhara",
+      title: "Midtown Cinemas Pokhara",
     },
     {
-      key: "cgv-pvj-bandung",
-      title: "CGV Paris Van Java Bandung",
+      key: "qfx-cinemas-kathmandu",
+      title: "QFX Cinemas Kathmandu",
     },
   ];
 
