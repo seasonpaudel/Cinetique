@@ -14,76 +14,61 @@ function Cinemas() {
     { image: "/images/hiflix.svg", name: "hiflix" },
   ];
   const data = [
-    // jakarta
+    // kathmandu
     {
       name: "BLOK M cineone21",
-      city: "jakarta",
+      city: "kathmandu",
       cinema: "cineone21",
       phone: "(021) 27082800",
     },
     {
       name: "DJAKARTA hiflix",
       cinema: "hiflix",
-      city: "jakarta",
+      city: "kathmandu",
       phone: "(021) 315 6725",
     },
-    {
-      name: "BLOK M cineone21",
-      cinema: "cineone21",
-      city: "jakarta",
-      phone: "(021) 27082800",
-    },
-    // bandung
+    
+    // pokhara
     {
       name: "TRANSMART BUAH BATU ebuid",
       cinema: "ebuid",
-      city: "bandung",
+      city: "pokhara",
       phone: "(022) 86012956",
     },
     {
       name: "BTC ebuid",
       cinema: "ebuid",
-      city: "bandung",
+      city: "pokhara",
       phone: "(022) 6126521",
     },
-    {
-      name: "CIWALK hiflix",
-      cinema: "hiflix",
-      city: "bandung",
-      phone: "(022) 2061017",
-    },
-    // padang
+    
+    // chitwan
     {
       name: "PLAZA ANDALAS cineone21",
       cinema: "cineone21",
-      city: "padang",
+      city: "chitwan",
       phone: "(0751) 8952484",
     },
     {
       name: "TRANSMART PADANG ebuid",
       cinema: "ebuid",
-      city: "padang",
+      city: "chitwan",
       phone: "(0751) 8971127",
     },
-    // surabaya
+    // butwal
     {
       name: "CIPUTRA WORLD hiflix",
       cinema: "hiflix",
-      city: "surabaya",
+      city: "butwal",
       phone: "(031) 512 00021",
     },
     {
       name: "GALAXY cineone21",
       cinema: "cineone21",
-      city: "surabaya",
+      city: "butwal",
       phone: "(031) 593 7121",
     },
-    {
-      name: "GRAND CITY cineone21",
-      cinema: "cineone21",
-      city: "surabaya",
-      phone: "(031) 524 05821",
-    },
+    
   ];
   const filteredData = data.filter((item) => item.city === location);
   const filteredCinema = data.filter((item) => item.cinema === nameCinema);
@@ -114,31 +99,31 @@ function Cinemas() {
                   </li>
                   <li
                     onClick={() => {
-                      setLocation("jakarta"), setNameCinema("");
+                      setLocation("kathmandu"), setNameCinema("");
                     }}
                   >
-                    <a>Jakarta</a>
+                    <a>Kathmandu</a>
                   </li>
                   <li
                     onClick={() => {
-                      setLocation("bandung"), setNameCinema("");
+                      setLocation("pokhara"), setNameCinema("");
                     }}
                   >
-                    <a>Bandung</a>
+                    <a>Pokhara</a>
                   </li>
                   <li
                     onClick={() => {
-                      setLocation("padang"), setNameCinema("");
+                      setLocation("chitwan"), setNameCinema("");
                     }}
                   >
-                    <a>Padang</a>
+                    <a>Chitwan</a>
                   </li>
                   <li
                     onClick={() => {
-                      setLocation("surabaya"), setNameCinema("");
+                      setLocation("butwal"), setNameCinema("");
                     }}
                   >
-                    <a>Surabaya</a>
+                    <a>Butwal</a>
                   </li>
                 </ul>
               </div>

@@ -106,7 +106,7 @@ function MovieDetails() {
     },
   ];
 
-  const [location, setLocation] = useState("Jakarta");
+  const [location, setLocation] = useState("Kathmandu");
   let date = new Date(dataMovie.release_date);
   let options = { year: "numeric", month: "long", day: "numeric" };
   let new_date = date.toLocaleDateString("en-US", options);
@@ -265,11 +265,11 @@ function MovieDetails() {
                         tabIndex={0}
                         className="dropdown-content menu menu-compact p-2 shadow bg-base-100 rounded-lg w-full"
                       >
-                        <li onClick={() => setLocation("Jakarta")}>
-                          <a>Jakarta</a>
+                        <li onClick={() => setLocation("Kathmandu")}>
+                          <a>Kathmandu</a>
                         </li>
-                        <li onClick={() => setLocation("Bandung")}>
-                          <a> Bandung</a>
+                        <li onClick={() => setLocation("Pokhara")}>
+                          <a> Pokhara</a>
                         </li>
                       </ul>
                     </div>
