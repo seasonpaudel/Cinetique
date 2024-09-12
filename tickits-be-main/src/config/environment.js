@@ -5,8 +5,8 @@ module.exports = {
   user: process.env.DB_USER,
   pass: process.env.DB_PASS,
   serverPort: process.env.SERVER_PORT,
-  jwtSecret: process.env.JWT_SECRET,
-  cloudinaryName: process.env.CLOUD_NAME,
-  cloudinaryKey: process.env.CLOUD_KEY,
-  cloudinarySecret: process.env.CLOUD_SECRET,
+  jwtSecret: process.env.JWT_SECRET_KEY,
+  cloudinaryName: process.env.CLOUDINARY_NAME,
+  cloudinaryKey: process.env.CLOUDINARY_KEY,
+  cloudinarySecret: process.env.CLOUDINARY_SECRET,
 };
