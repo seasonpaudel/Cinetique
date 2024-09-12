@@ -1,5 +1,5 @@
 import Image from "next/image";
-import cineOne21 from "@/Assets/cineone21.svg";
+import cdc from "@/Assets/cdc.svg";
 import Seat from "@/components/Seat";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -188,7 +188,7 @@ function Order() {
               <div className="flex flex-col items-center px-6 pt-10 bg-white rounded-md">
                 <Image
                   src={orderRedux.image}
-                  alt="cineone21"
+                  alt="cdc"
                   width={100}
                   height={80}
                 />

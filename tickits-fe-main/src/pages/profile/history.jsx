@@ -89,7 +89,7 @@ function History() {
                     </div>
                     <div>
                       <Image
-                        src={"/images/cineone21.svg"}
+                        src={"/images/cdc.svg"}
                         width={174}
                         height={27}
                         className="h-6 md:h-auto"
@@ -119,7 +119,7 @@ function History() {
                     </div>
                     <div>
                       <Image
-                        src={"/images/ebuid.svg"}
+                        src={"/images/midtown.svg"}
                         width={174}
                         height={27}
                         className="h-6 md:h-auto"
@@ -149,7 +149,7 @@ function History() {
                     </div>
                     <div>
                       <Image
-                        src={"/images/ebuid.svg"}
+                        src={"/images/midtown.svg"}
                         width={174}
                         height={27}
                         className="h-6 md:h-auto"
