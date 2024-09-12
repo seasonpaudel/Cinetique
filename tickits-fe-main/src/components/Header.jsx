@@ -14,12 +14,12 @@ function Header() {
     { title: "Cinemas", url: "/cinemas" },
     { title: "Buy Ticket", url: "/" },
   ];
-  const locations = [
+    const locations =[
     {
       key: "cgv-jaksel",
       title: "CGV Jakarta Selatan",
     },
-    },
+    
     {
       key:  "cgv-pvj-bandung",
       title: "CGV Paris Van Java Bandung",
