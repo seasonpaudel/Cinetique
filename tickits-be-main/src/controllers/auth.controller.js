@@ -58,7 +58,7 @@ const login = async (req, res) => {
 
     const payload = { id, role_id, email, phone, first_name, last_name, image };
     const jwtOptions = { expiresIn: "2 days" };
-    jwt.sign(payload, env.jwtSecret, jwtOptions, async (err, token) => {
+    jwt.sign(payload, process.env.JWT_SECRET, jwtOptions, async (err, token) => {
       if (err) throw err;
       res.status(200).json({
         msg: "Login Success",
