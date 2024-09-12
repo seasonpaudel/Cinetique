@@ -16,12 +16,13 @@ function Header() {
   ];
   const locations = [
     {
-      key: "midtown-cinemas-pokhara",
-      title: "Midtown Cinemas Pokhara",
+      key: "cgv-jaksel",
+      title: "CGV Jakarta Selatan",
+    },
     },
     {
-      key: "qfx-cinemas-kathmandu",
-      title: "QFX Cinemas Kathmandu",
+      key:  "cgv-pvj-bandung",
+      title: "CGV Paris Van Java Bandung",
     },
   ];
 
@@ -389,12 +390,12 @@ function Header() {
 export async function getStaticProps() {
   const locations = [
     {
-      key: "midtown-cinemas-pokhara"
-      title: "Midtown Cinemas Pokhara",
+      key: "cgv-jaksel",
+      title: "CGV Jakarta Selatan",
     },
     {
-      key: "qfx-cinemas-kathmandu",
-      title: "QFX Cinemas Kathmandu",
+      key: "cgv-pvj-bandung",
+      title: "CGV Paris Van Java Bandung",
       
     },
   ];
