@@ -39,7 +39,7 @@ function Payment() {
     const data = {
       user_id: userRedux.id,
       movie_id: orderRedux.movieId,
-      teathStudio_id: orderRedux.cinemaId,
+      theatstudio_id: orderRedux.cinemaId,
       seat: onBookingFormatted,
       total_price: orderRedux.totalPrice,
       payment_id: active,

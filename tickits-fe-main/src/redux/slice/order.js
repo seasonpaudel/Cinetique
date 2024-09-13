@@ -10,7 +10,7 @@ const initialState = {
   date: null,
   time: null,
   price: null,
-  teathstudioId: null,
+  theatstudioId: null,
   totalPrice: null,
 };
 
@@ -57,7 +57,7 @@ const orderSlice = createSlice({
       return {
         ...prevState,
         // dataSeat: action.payload.dataSeats,
-        teathstudioId: action.payload.teathstudioId,
+        theatstudioId: action.payload.theatstudioId,
         totalPrice: action.payload.totalPrice,
       };
     },

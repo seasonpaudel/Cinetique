@@ -23,7 +23,7 @@ module.exports = {
         } else {
           acc.push({
             id: cur.id,
-            teather_name: cur.teather_name,
+            theater_name: cur.theater_name,
             image: cur.image || null,
             movie_name: cur.movie_name,
             open_date: cur.open_date,
@@ -54,8 +54,8 @@ module.exports = {
   },
   readDataBooking: async (req, res) => {
     try {
-      const { movie_id, teathstudio_id } = req.body;
-      const data = await bookingModel.getDataBooked(movie_id, teathstudio_id);
+      const { movie_id, theatstudio_id } = req.body;
+      const data = await bookingModel.getDataBooked(movie_id, theatstudio_id);
       const result = data.reduce((acc, cur) => {
         const existingObj = acc.find((obj) => obj.id === cur.id);
 
@@ -67,7 +67,7 @@ module.exports = {
         } else {
           acc.push({
             id: cur.id,
-            teather_name: cur.teather_name,
+            theater_name: cur.theater_name,
             image: cur.image || null,
             movie_name: cur.movie_name,
             open_date: cur.open_date,
@@ -108,7 +108,7 @@ module.exports = {
         } else {
           acc.push({
             id: cur.id,
-            teather_name: cur.teather_name,
+            theater_name: cur.theater_name,
             image: cur.image || null,
             movie_name: cur.movie_name,
             total_price: cur.total_price,

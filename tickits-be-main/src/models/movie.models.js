@@ -9,11 +9,11 @@ const createMovie = (req, fileLink) => {
       duration_hour,
       duration_minute,
       director,
-      aktors,
+      actors,
       sinopsis,
     } = req.body;
     const sqlQuery =
-      "INSERT INTO movies (movie_name, category, release_date, duration_hour, duration_minute, director, aktors, sinopsis, image) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING *";
+      "INSERT INTO movies (movie_name, category, release_date, duration_hour, duration_minute, director, actors, sinopsis, image) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING *";
     const values = [
       movie_name,
       category,
@@ -21,7 +21,7 @@ const createMovie = (req, fileLink) => {
       duration_hour,
       duration_minute,
       director,
-      aktors,
+      actors,
       sinopsis,
       fileLink,
     ];
@@ -68,7 +68,7 @@ const getAllMovies = () => {
 const getDataById = (id) => {
   return new Promise((resolve, reject) => {
     db.query(
-      "select m.id, m.movie_name, m.image, g.genre_name, release_date, director, duration_hour, duration_minute, aktors, sinopsis from movies m join movie_genre q on m.id=q.movie_id join genre g on q.genre_id=g.id where m.id=$1",
+      "select m.id, m.movie_name, m.image, g.genre_name, release_date, director, duration_hour, duration_minute, actors, sinopsis from movies m join movie_genre q on m.id=q.movie_id join genre g on q.genre_id=g.id where m.id=$1",
       [id],
       (error, result) => {
         if (error) {

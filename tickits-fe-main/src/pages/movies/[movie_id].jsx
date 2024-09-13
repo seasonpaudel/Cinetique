@@ -213,7 +213,7 @@ function MovieDetails() {
                     <div className="mt-8">
                       <p className="text-[#8692A6] text-sm">Casts</p>
                       <p className="text-base">
-                        {dataMovie.aktors || "actors"}
+                        {dataMovie.actors || "actors"}
                       </p>
                     </div>
                   </div>
@@ -279,7 +279,7 @@ function MovieDetails() {
                   {dataStudio.map((studio, idx) => (
                     <CardCinema
                       key={idx}
-                      name={studio.teather_name}
+                      name={studio.theater_name}
                       address={studio.address}
                       image={studio.image}
                       date={studio.open_date}
