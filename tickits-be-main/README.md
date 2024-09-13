@@ -1,12 +1,12 @@
 <div align='center'>
 
-<img src="./public/logo-rect.svg" alt="Tickits" width="128"/>
+<img src="./public/logo-rect.svg" alt="Cinetique" width="128"/>
 
 <br>
 
 [![My Skills](https://skillicons.dev/icons?i=nodejs,express,postgres,redis)](#technologies-used)
 
-<h2 style="">Tickits</h2>
+<h2 style="">Cinetique</h2>
 <h3 align="center">Rest API for tickits</h3>
 
 [Demo](https://tickits-be.vercel.app/) · [Related Project](#related-project)

@@ -222,9 +222,9 @@ function Home({ movies, error }) {
           <div className="flex flex-col gap-12 p-10 rounded-lg items-center justify-center shadow-[0px_16px_32px_0px_#BABABA4D] text-center">
             <div className="flex flex-col items-center justify-center gap-2">
               <p className="text-body text-2xl tracking-wide">
-                Be the vanguard of the
+                Lead the Way for 
               </p>
-              <p className="text-black text-5xl font-bold">Moviegoers</p>
+              <p className="text-black text-5xl font-bold">Movie Enthusiasts</p>
             </div>
             <form
               className="flex flex-col md:flex-row gap-4"
