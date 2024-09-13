@@ -98,7 +98,7 @@ function History() {
                     </div>
                   </div>
                   <div className="flex justify-between items-center px-8 py-4">
-                    <button className="btn btn-primary w-[40%] px-0 md:w-[30%] ">
+                    <button className="btn bg-black text-white w-[40%] px-0 md:w-[30%] ">
                       Ticket in active
                     </button>
                     <div className="flex items-center gap-2 text-[#AAAAAA]">

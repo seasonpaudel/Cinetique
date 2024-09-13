@@ -187,15 +187,15 @@ function Profile() {
               </div>
               <div className="pt-8 px-8 pb-20">
                 <p className="mb-6">Loyalty Points</p>
-                <div className="w-[80%] md:w-[45%] lg:w-full md:h-52 lg:h-full bg-gradient-to-r from-primary to-primary/80 bg-gradient-to-right-top px-4 py-6 rounded-lg text-white">
-                <p className="text-black">s</p>
+                <div className="w-[80%] md:w-[45%] lg:w-full md:h-52 lg:h-full bg-gradient-to-r from-black to-gray-800 px-4 py-6 rounded-lg text-white">
+                <p className="text-white">s</p>
                   <p className="text-2xl mt-5">
                     320 <span className="text-xs">points</span>
                   </p>
                 </div>
                 <p className="mt-8">180 points become a master</p>
                 <progress
-                  className="progress progress-primary w-56"
+                  className="progress progress-black w-56"
                   value="40"
                   max="100"
                 ></progress>
@@ -206,7 +206,7 @@ function Profile() {
                 <div className="flex border-b px-8 py-6 gap-14 text-lg relative">
                   <div>
                     <p className="min-w-[9rem]">Account Settings</p>
-                    <div className="h-1 w-36 bg-primary absolute bottom-0"></div>
+                    <div className="h-1 w-36 bg-black absolute bottom-0"></div>
                   </div>
                   <Link href={"profile/history"}>
                     <p className="text-[#AAAAAA]">Order History</p>
@@ -280,7 +280,7 @@ function Profile() {
                           className=" w-full md:w-[18rem] lg:w-[20rem] h-16 border outline-none  pl-20 pr-6 rounded focus:border-primary "
                         />
                         <span className="absolute left-0 bottom-3 px-4 py-2 border-r h-10">
-                          +62
+                          +977
                         </span>
                       </div>
                     </div>
@@ -344,7 +344,7 @@ function Profile() {
                   </div>
                   <div className="flex flex-col md:flex-row w-full items-center min-h-12 mt-14 gap-4">
                     <button
-                      className={`btn btn-primary w-full md:w-[40%] text-white ${
+                      className={`btn bg-black w-full md:w-[40%] text-white ${
                         isLoading && "loading"
                       }`}
                       onClick={Submit}
