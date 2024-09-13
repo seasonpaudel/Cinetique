@@ -19,7 +19,7 @@ export const getMovieDetails = (movieId, controller) => {
 };
 
 export const getStudioTime = (info, controller) => {
-  const url = `${baseUrl}/teather?open_date=${info}`;
+  const url = `${baseUrl}/theater?open_date=${info}`;
   console.log(url);
   return axios.get(url, { signal: controller.signal });
 };

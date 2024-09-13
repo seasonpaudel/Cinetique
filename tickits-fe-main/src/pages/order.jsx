@@ -53,7 +53,7 @@ function Order() {
     // });
     const data = {
       // dataSeats: onBookingFormatted,
-      teathstudioId: orderRedux.cinemaId,
+      theatstudioId: orderRedux.cinemaId,
       totalPrice: orderRedux.price * orderRedux.dataSeat.length,
     };
     dispatch(orderAction.addOrder(data));
@@ -69,7 +69,7 @@ function Order() {
     // const body = {
     //   user_id: "61ae12bb-0ba4-48dd-9bf5-833f324b14b0",
     //   movie_id: "c86f937b-ea07-495c-9047-da30a1b758e5",
-    //   teathStudio_id: 8,
+    //   theatstudio_id: 8,
     //   seat: onBookingFormatted,
     //   payment_id: 1,
     // };

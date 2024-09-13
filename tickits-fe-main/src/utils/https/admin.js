@@ -25,7 +25,7 @@ export const createMovie = (token, file, body, controller) => {
 };
 
 export const createSchedule = (token, body, controller) => {
-  const url = `${baseUrl}/teather/create-schedule`;
+  const url = `${baseUrl}/theater/create-schedule`;
   return axios.post(url, body, {
     signal: controller.signal,
     headers: { Authorization: `Bearer ${token}` },

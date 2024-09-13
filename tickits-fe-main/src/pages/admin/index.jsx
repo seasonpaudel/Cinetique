@@ -31,7 +31,7 @@ function CreateSchedule() {
   const [dataCategory, setDataCategory] = useState([]);
   const [category, setCategory] = useState([]);
   const [location, setLocation] = useState("CGV Jakarta Selatan");
-  const [teather, setTeather] = useState(0);
+  const [theater, setTheater] = useState(0);
   const [addTime, setAddTime] = useState("");
   const [dataTime, setDataTime] = useState([]);
   const [addPrice, setAddPrice] = useState("");
@@ -44,7 +44,7 @@ function CreateSchedule() {
     duration_hour: "",
     duration_minute: "",
     director: "",
-    aktors: "",
+    actors: "",
     sinopsis: "",
     open_date: "",
   });
@@ -101,7 +101,7 @@ function CreateSchedule() {
       duration_hour: form.duration_hour,
       duration_minute: form.duration_minute,
       director: form.director,
-      aktors: form.aktors,
+      actors: form.actors,
       sinopsis: form.sinopsis,
     };
     console.log(bodyMovie);
@@ -120,17 +120,17 @@ function CreateSchedule() {
 
   const createSchedules = async (movieId) => {
     try {
-      const bodyTeatherStudio = dataTime.map((time, i) => ({
-        teather_id: teather,
+      const bodyTheaterStudio = dataTime.map((time, i) => ({
+        theater_id: theater,
         open_date: form.open_date,
         open_time: time,
         price: dataPrice[i],
         movie_id: movieId, //response movie
       }));
-      console.log(bodyTeatherStudio);
+      console.log(bodyTheaterStudio);
       const resultCreateSchedule = await createSchedule(
         token,
-        bodyTeatherStudio,
+        bodyTheaterStudio,
         controller
       );
       console.log(resultCreateSchedule);
@@ -310,8 +310,8 @@ function CreateSchedule() {
                         type="text"
                         placeholder="Type casts"
                         id="casts"
-                        name="aktors"
-                        value={form.aktors}
+                        name="actors"
+                        value={form.actors}
                         onChange={onChangeForm}
                         className="admin-input"
                       />
@@ -361,9 +361,9 @@ function CreateSchedule() {
               </div>
               <div className="w-full flex flex-wrap justify-between ">
                 <div
-                  onClick={() => setTeather(1)}
+                  onClick={() => setTheater(1)}
                   className={`w-fit flex items-center px-3 py-2 hover:shadow-lg cursor-pointer border-2 ${
-                    teather === 1 ? "border-primary" : "border-base-100"
+                    theater === 1 ? "border-primary" : "border-base-100"
                   } rounded-lg`}
                 >
                   <div className="w-20">
@@ -377,9 +377,9 @@ function CreateSchedule() {
                   </div>
                 </div>
                 <div
-                  onClick={() => setTeather(2)}
+                  onClick={() => setTheater(2)}
                   className={`w-fit flex items-center px-3 py-2 hover:shadow-lg cursor-pointer border-2 ${
-                    teather === 2 ? "border-primary" : "border-base-100"
+                    theater === 2 ? "border-primary" : "border-base-100"
                   } rounded-lg`}
                 >
                   <div className="w-20">
@@ -393,9 +393,9 @@ function CreateSchedule() {
                   </div>
                 </div>
                 <div
-                  onClick={() => setTeather(3)}
+                  onClick={() => setTheater(3)}
                   className={`w-fit flex items-center px-3 py-2 hover:shadow-lg cursor-pointer border-2 ${
-                    teather === 3 ? "border-primary" : "border-base-100"
+                    theater === 3 ? "border-primary" : "border-base-100"
                   } rounded-lg`}
                 >
                   <div className="w-20">
@@ -473,7 +473,7 @@ function CreateSchedule() {
             ) : (
               <button
                 disabled={
-                  teather === 0 ||
+                  theater === 0 ||
                   dataTime.length < 1 ||
                   category.length < 1 ||
                   form.movie_name === "" ||
@@ -481,7 +481,7 @@ function CreateSchedule() {
                   form.duration_hour === "" ||
                   form.duration_minute === "" ||
                   form.director === "" ||
-                  form.aktors === "" ||
+                  form.actors === "" ||
                   form.sinopsis === "" ||
                   form.open_date === "" ||
                   image === "" ||
