@@ -142,7 +142,7 @@ function Movies() {
                   className={`${
                     search !== ""
                       ? "bg-white hover:bg-gray-200 border-primary text-primary"
-                      : `btn-primary text-white`
+                      : `bg-black text-white`
                   } btn btn-sm h-12  min-w-[8rem]`}
                   onClick={() =>
                     push({

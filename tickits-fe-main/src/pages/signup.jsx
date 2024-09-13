@@ -144,7 +144,7 @@ function Signup(props) {
                     formData.email === "" ||
                     formData.password === ""
                   }
-                  className="btn btn-primary w-[94%] rounded mt-7"
+                  className="btn bg-black w-[94%] rounded mt-7"
                 >
                   Join for free
                 </button>

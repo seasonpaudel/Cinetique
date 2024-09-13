@@ -15,8 +15,7 @@ function Footer() {
             />
           </Link>
           <p className="text-primary-label  max-w-xs">
-            Stop waiting in line. Buy tickets conveniently, watch movies
-            quietly.
+           No more delays. Secure your tickets seamlessly and enjoy movies in serene comfort.
           </p>
         </div>
         <div className="flex-1 flex flex-col gap-3 text-primary-label">
