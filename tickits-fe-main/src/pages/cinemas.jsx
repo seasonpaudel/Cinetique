@@ -82,7 +82,7 @@ function Cinemas() {
               <div className="dropdown z-10">
                 <label
                   tabIndex={0}
-                  className="btn btn-primary  w-[10rem] rounded"
+                  className="btn bg-black text-white  w-[10rem] rounded"
                 >
                   {location}
                 </label>
@@ -95,7 +95,7 @@ function Cinemas() {
                       setLocation("Select City"), setNameCinema("");
                     }}
                   >
-                    <a>Select City</a>
+                    <a></a>
                   </li>
                   <li
                     onClick={() => {
