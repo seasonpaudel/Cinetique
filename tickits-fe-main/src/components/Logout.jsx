@@ -84,14 +84,14 @@ function Logout({ isOpen, onClose, handler }) {
           <div className="ml-auto">
             <button
               onClick={logoutHandler}
-              className={`submit mt-5 btn px-8 bg-primary border-2 border-white capitalize hover:bg-primary-focus hover:border-gray-200 text-white ${
+              className={`submit mt-5 btn px-8 bg-black text-white border-2 border-white capitalize hover:bg-black-focus hover:border-gray-200 text-white ${
                 isLoading ? "loading" : ""
               }`}
             >
               Yes
             </button>
             <p
-              className="text-center text-primary cursor-pointer text-sm mt-2"
+              className="text-center text-black cursor-pointer text-sm mt-2"
               onClick={() => onClose()}
             >
               No

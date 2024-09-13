@@ -155,7 +155,7 @@ function Signup(props) {
                   onClick={() => {
                     router.push("/login");
                   }}
-                  className="text-[#9570FE] cursor-pointer"
+                  className="text-[#0084FF] cursor-pointer"
                 >
                   Log in
                 </span>

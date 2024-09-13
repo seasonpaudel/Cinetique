@@ -88,10 +88,10 @@ function Home({ movies, error }) {
           <div className="flex justify-between text-primary py-5">
             <div className="font-bold text-2xl flex flex-col gap-3">
             <p className="text-black">Now Showing</p>
-              <div className="h-[3px] w-[65%] bg-primary mx-auto rounded-lg" />
+              <div className="h-[3px] w-[65%] bg-black mx-auto rounded-lg" />
             </div>
             <div className="">
-              <Link href={"/movies"} className="font-bold">
+              <Link href={"/movies"} className="font-bold text-black">
                 view all
               </Link>
             </div>

@@ -70,7 +70,7 @@ function SideForAuth() {
                   />
                 </Link>{" "}
                 <p className="md:text-4xl lg:text-5xl text-white/80 text-center mt-[9px]">
-                  wait, watch, wow!
+                  Search, Secure, Spectate!
                 </p>
               </>
             )}

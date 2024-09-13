@@ -57,7 +57,7 @@ function Login() {
                 width={130}
                 height={72}
                 className="md:hidden "
-                alt="Tickits"
+                alt="Cinetique"
               />
               <p className="text-[#121212] text-3xl font-semibold inline-block mt-12 md:mt-0">
                 Sign In
@@ -91,7 +91,7 @@ function Login() {
               />
 
               {isLoading ? (
-                <button className="btn btn-primary loading  w-[94%] rounded mt-7">
+                <button className="btn bg-black text-white loading  w-[94%] rounded mt-7">
                   Sign in
                 </button>
               ) : (
@@ -103,7 +103,7 @@ function Login() {
                     invalid ||
                     isLoading
                   }
-                  className="btn btn-primary w-[94%] rounded mt-7"
+                  className="btn bg-black text-white w-[94%] rounded mt-7"
                 >
                   Sign in
                 </button>
@@ -116,7 +116,7 @@ function Login() {
                   onClick={() => {
                     router.push("/reset-password");
                   }}
-                  className="text-[#9570FE] cursor-pointer"
+                  className="text-[#0084FF] cursor-pointer"
                 >
                   Reset now
                 </span>

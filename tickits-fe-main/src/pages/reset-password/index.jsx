@@ -84,7 +84,7 @@ function Forgot() {
                   type="submit"
                   onClick={handleEmail}
                   disabled={email === ""}
-                  className="btn btn-primary w-[94%] rounded mt-7"
+                  className="btn bg-black text-white w-[94%] rounded mt-7"
                 >
                   Activate Now
                 </button>
