@@ -30,7 +30,7 @@ function CreateSchedule() {
   const [isLoading, setLoading] = useState(false);
   const [dataCategory, setDataCategory] = useState([]);
   const [category, setCategory] = useState([]);
-  const [location, setLocation] = useState("CGV Jakarta Selatan");
+  const [location, setLocation] = useState(" Jakarta Selatan");
   const [theater, setTheater] = useState(0);
   const [addTime, setAddTime] = useState("");
   const [dataTime, setDataTime] = useState([]);
@@ -351,11 +351,8 @@ function CreateSchedule() {
                   tabIndex={0}
                   className="dropdown-content menu menu-compact p-2 shadow bg-base-100 rounded-lg lg:w-[16.375rem]"
                 >
-                  <li onClick={() => setLocation("CGV Jakarta Selatan")}>
-                    <a>CGV Jakarta Selatan</a>
-                  </li>
-                  <li onClick={() => setLocation("CGV Paris Van Java Bandung")}>
-                    <a>CGV Paris Van Java Bandung</a>
+                  <li onClick={() => setLocation("List")}>
+                    <a>List</a>
                   </li>
                 </ul>
               </div>

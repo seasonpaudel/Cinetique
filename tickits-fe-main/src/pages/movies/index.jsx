@@ -181,7 +181,7 @@ function Movies() {
 
           {dataMovies.length < 1 && !isLoading && (
             <section className="h-2/4 flex flex-col justify-center items-center gap-6">
-              <Image src="/images/movie.svg" alt="" width={128} height={128} />
+              <Image src="/images/movie.jpg" alt="" width={128} height={128} />
               <p className="text-lg font-semibold">Movie not Found</p>
             </section>
           )}
