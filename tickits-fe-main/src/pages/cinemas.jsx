@@ -130,7 +130,7 @@ function Cinemas() {
             </div>
           </div>
 
-          <div className="flex justify-between items-center bg-primary px-4 md:px-10 lg:px-40 py-5 rounded shadow-md">
+          <div className="flex justify-between items-center bg-white px-4 md:px-10 lg:px-40 py-5 rounded shadow-md">
             {dataCinemas.map((data, idx) => (
               <div key={idx} className="cursor-pointer">
                 <Image
