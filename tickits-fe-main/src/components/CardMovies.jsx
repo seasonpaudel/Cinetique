@@ -33,19 +33,19 @@ function CardMovies(props) {
         <p className="text-gray-400 mt-5">Availabel :</p>
         <div className="flex flex-col md:flex-row mt-2md:mt-5 gap-4 md:gap-10">
           <Image
-            src="/images/ebuid.svg"
+            src="/images/midtown.svg"
             alt="banner-movies"
             width={110}
             height={10}
           />
           <Image
-            src="/images/hiflix.svg"
+            src="/images/qfx.svg"
             alt="banner-movies"
             width={120}
             height={10}
           />
           <Image
-            src="/images/cineone21.svg"
+            src="/images/cdc.svg"
             alt="banner-movies"
             width={210}
             height={10}

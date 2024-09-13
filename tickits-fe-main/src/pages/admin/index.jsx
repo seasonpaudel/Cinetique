@@ -368,8 +368,8 @@ function CreateSchedule() {
                 >
                   <div className="w-20">
                     <Image
-                      src="/images/ebuid.svg"
-                      alt="ebuid"
+                      src="/images/midtown.svg"
+                      alt="midtown"
                       width={50}
                       height={31}
                       className="w-full"
@@ -384,8 +384,8 @@ function CreateSchedule() {
                 >
                   <div className="w-20">
                     <Image
-                      src="/images/hiflix.svg"
-                      alt="ebuid"
+                      src="/images/qfx.svg"
+                      alt="midtown"
                       width={50}
                       height={27}
                       className="w-full"
@@ -400,8 +400,8 @@ function CreateSchedule() {
                 >
                   <div className="w-20">
                     <Image
-                      src="/images/cineone21.svg"
-                      alt="ebuid"
+                      src="/images/cdc.svg"
+                      alt="midtown"
                       width={50}
                       height={15}
                       className="w-full"

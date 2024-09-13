@@ -9,64 +9,64 @@ function Cinemas() {
   const [nameCinema, setNameCinema] = useState("");
   console.log(nameCinema);
   const dataCinemas = [
-    { image: "/images/cineone21.svg", name: "cineone21" },
-    { image: "/images/ebuid.svg", name: "ebuid" },
-    { image: "/images/hiflix.svg", name: "hiflix" },
+    { image: "/images/cdc.svg", name: "cdc" },
+    { image: "/images/midtown.svg", name: "midtown" },
+    { image: "/images/qfx.svg", name: "qfx" },
   ];
   const data = [
     // kathmandu
     {
-      name: "BLOK M cineone21",
+      name: "Kathmandu CDC Cinemas",
+      cinema: "cdc",
       city: "kathmandu",
-      cinema: "cineone21",
-      phone: "(021) 27082800",
+      phone: "01-5348403",
     },
     {
-      name: "DJAKARTA hiflix",
-      cinema: "hiflix",
+      name: "QFX Cinemas Kathmandu",
+      cinema: "qfx",
       city: "kathmandu",
-      phone: "(021) 315 6725",
+      phone: "01-4011643",
     },
     
     // pokhara
     {
-      name: "TRANSMART BUAH BATU ebuid",
-      cinema: "ebuid",
+      name: "Pokhara Midtown Cinemas",
+      cinema: "midtown",
       city: "pokhara",
-      phone: "(022) 86012956",
+      phone: "061-580781",
     },
     {
-      name: "BTC ebuid",
-      cinema: "ebuid",
+      name: "Pokhara Cineplex",
+      cinema: "qfx",
       city: "pokhara",
-      phone: "(022) 6126521",
+      phone: "061-572630",  
     },
     
     // chitwan
     {
-      name: "PLAZA ANDALAS cineone21",
-      cinema: "cineone21",
+      name:  "Chitwan Indradev Cinema",
+      cinema:  "cdc",
       city: "chitwan",
-      phone: "(0751) 8952484",
+      phone: "982-9490700",
     },
     {
-      name: "TRANSMART PADANG ebuid",
-      cinema: "ebuid",
+      name:  "QFX Cinema",
+      cinema: "qfx",
       city: "chitwan",
-      phone: "(0751) 8971127",
+      phone: "056-512079",
     },
     // butwal
     {
-      name: "CIPUTRA WORLD hiflix",
-      cinema: "hiflix",
+      name: "QFX Butwal",
+      cinema: "qfx",
       city: "butwal",
-      phone: "(031) 512 00021",
+      phone: " 071-531506",
     },
     {
-      name: "GALAXY cineone21",
-      cinema: "cineone21",
+      name: "View Cinemas",
+      cinema: "cdc",
       city: "butwal",
-      phone: "(031) 593 7121",
+      phone: "071-536015",
     },
     
   ];
