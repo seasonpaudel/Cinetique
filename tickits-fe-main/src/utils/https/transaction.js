@@ -3,7 +3,7 @@ import axios from "axios";
 const baseUrl = process.env.NEXT_PUBLIC_APL_URL;
 
 export const createBooking = (body, controller) => {
-  const url = `${baseUrl}/booking`;
+  const url = `http://localhost:8080/booking`;
   return axios.post(url, body, { signal: controller.signal });
 };
 
