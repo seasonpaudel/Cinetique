@@ -1,24 +1,17 @@
-import 'react-loading-skeleton/dist/skeleton.css';
+import "react-loading-skeleton/dist/skeleton.css";
 
-import {
-  useEffect,
-  useMemo,
-  useState,
-} from 'react';
+import { useEffect, useMemo, useState } from "react";
 
-import Image from 'next/image';
-import { useRouter } from 'next/router';
-import Skeleton from 'react-loading-skeleton';
+import Image from "next/image";
+import { useRouter } from "next/router";
+import Skeleton from "react-loading-skeleton";
 
-import placeholder from '@/Assets/profile/poster.png';
-import CardCinema from '@/components/CardCinema';
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
-import Layout from '@/components/Layout';
-import {
-  getMovieDetails,
-  getStudioTime,
-} from '@/utils/https/movies';
+import placeholder from "@/Assets/profile/poster.png";
+import CardCinema from "@/components/CardCinema";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Layout from "@/components/Layout";
+import { getMovieDetails, getStudioTime } from "@/utils/https/movies";
 
 function ListDate(props) {
   // console.log(props);
@@ -27,7 +20,6 @@ function ListDate(props) {
   const mounth = String(date.getMonth() + 1).padStart(2, "0");
   const day = String(date.getDate()).padStart(2, "0");
   const formatedDate = `${year}-${mounth}-${day}`;
-
   return (
     <li onClick={() => props.isClick(formatedDate)}>
       <a>{formatedDate}</a>
@@ -46,14 +38,16 @@ function MovieDetails() {
   // console.log(router.query.movie_id);
 
   const handleSelectDate = (info) => {
+    console.log("info", info);
     setSelectDate(info);
+
     fetchingSelectDate(info);
   };
 
   const fetchingSelectDate = async (date) => {
     try {
       const result = await getStudioTime(date, controller);
-      // console.log(result.data.data);
+      console.log(result.data.data);
       setDataStudio(result.data.data);
     } catch (error) {
       console.log(error);
@@ -67,8 +61,21 @@ function MovieDetails() {
       // console.log(result);
       setDataMovie(result.data.data[0]);
       const getStudio = await getStudioTime("", controller);
-      // console.log(getStudio);
-      setDataDate(getStudio.data.data);
+      console.log(getStudio);
+      const today = new Date(new Date().setDate(new Date().getDate() - 1))
+        .toISOString()
+        .split("T")[0];
+      const dates = [
+        today,
+        new Date().toISOString().split("T")[0],
+        new Date(new Date().setDate(new Date().getDate() + 1))
+          .toISOString()
+          .split("T")[0],
+        new Date(new Date().setDate(new Date().getDate() + 2))
+          .toISOString()
+          .split("T")[0],
+      ];
+      setDataDate(dates);
       setIsLoading(false);
       // setDataStudio(getStudio.data.data);
     } catch (error) {
@@ -82,29 +89,6 @@ function MovieDetails() {
     fetching();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.isReady]);
-  const data = [
-    {
-      name: "ebv.id",
-      address: "Whatever street No.12, South Purwokerto",
-      image: "/images/midtown.svg",
-      time: ["08:20", "09:20", "10:20", "11:20", "12:20", "13:20", "16:20"],
-      price: 10,
-    },
-    {
-      name: "cdc",
-      address: "Downcare street  No. 21, East Purwokerto",
-      image: "/images/cdc.svg",
-      time: ["08:20", "09:20", "10:20", "11:20", "12:20", "13:20", "16:20"],
-      price: 10,
-    },
-    {
-      name: "qfx",
-      address: "Colonel street No. 2, East Purwokerto",
-      image: "/images/qfx.svg",
-      time: ["08:20", "09:20", "10:20", "11:20", "12:20", "13:20", "16:20"],
-      price: 10,
-    },
-  ];
 
   const [location, setLocation] = useState("Kathmandu");
   let date = new Date(dataMovie.release_date);
@@ -112,7 +96,8 @@ function MovieDetails() {
   let new_date = date.toLocaleDateString("en-US", options);
   // console.log(new_date);
 
-  console.log(dataStudio);
+  // console.log("dates", dataDate);
+  // console.log(dataStudio);
   return (
     <Layout title={"Movie Details"}>
       <Header />
@@ -246,7 +231,7 @@ function MovieDetails() {
                             <ListDate
                               isClick={handleSelectDate}
                               key={idx}
-                              date={date.open_date}
+                              date={date}
                             />
                           ))}
                         </ul>
