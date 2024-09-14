@@ -56,7 +56,7 @@ function Header() {
                 src="/images/logo.svg"
                 width={128}
                 height={32}
-                alt={`Tickits`}
+                alt={`Cinetique`}
                 className="w-24 md:w-32"
               />
             </Link>

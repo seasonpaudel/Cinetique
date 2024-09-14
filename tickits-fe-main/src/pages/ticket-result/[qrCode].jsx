@@ -86,7 +86,7 @@ function TicketResult() {
                     </span>
                     <span className="flex-1 flex flex-col items-start">
                       <p className="text-gray-400 text-sm">Price</p>
-                      <h2 className="font-bold">{payment} $</h2>
+                      <h2 className="font-bold">{payment} रू</h2>
                     </span>
                   </div>
                 </span>
