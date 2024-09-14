@@ -234,7 +234,7 @@ function MovieDetails() {
                       <div className="dropdown z-0">
                         <label
                           tabIndex={0}
-                          className="btn btn-outline btn-primary  w-[10rem] md:w-[16.375rem] rounded"
+                          className="btn bg-black text-white w-[10rem] md:w-[16.375rem] rounded"
                         >
                           {selectDate === "" ? "Select Date" : selectDate}
                         </label>
@@ -257,19 +257,25 @@ function MovieDetails() {
                     <div className="dropdown z-0">
                       <label
                         tabIndex={0}
-                        className="btn btn-primary  w-[10rem] md:w-[16.375rem] rounded"
+                        className="btn bg-black text-white  w-[10rem] md:w-[16.375rem] rounded"
                       >
                         {location}
                       </label>
                       <ul
                         tabIndex={0}
-                        className="dropdown-content menu menu-compact p-2 shadow bg-base-100 rounded-lg w-full"
+                        className="dropdown-content menu menu-compact p-2 shadow bg-white text-black rounded-lg w-full"
                       >
                         <li onClick={() => setLocation("Kathmandu")}>
                           <a>Kathmandu</a>
                         </li>
                         <li onClick={() => setLocation("Pokhara")}>
                           <a> Pokhara</a>
+                        </li>
+                        <li onClick={() => setLocation("Chitwan")}>
+                          <a>Chitwan</a>
+                        </li>
+                        <li onClick={() => setLocation("Butwal")}>
+                          <a>Butwal</a>
                         </li>
                       </ul>
                     </div>

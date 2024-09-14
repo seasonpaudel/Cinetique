@@ -12,7 +12,7 @@ function Header() {
   const navList = [
     { title: "Movies", url: "/movies" },
     { title: "Cinemas", url: "/cinemas" },
-    { title: "Buy Ticket", url: "/" },
+    { title: "Buy Ticket", url: "/movies" },
   ];
     const locations =[
     {
