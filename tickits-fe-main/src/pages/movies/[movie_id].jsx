@@ -290,7 +290,7 @@ function MovieDetails() {
                       image={studio.image}
                       date={studio.open_date}
                       time={studio.open_time}
-                      price={10}
+                      price={studio.price}
                     />
                   ))}
                 </div>
