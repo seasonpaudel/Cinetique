@@ -36,19 +36,19 @@ function TicketResult() {
   // }, []);
   return (
     <PrivateRouteNotLogin>
-      <Layout title={"Tiket Result"}>
+      <Layout title={"Cinetique Result"}>
         <Header />
         <div className="w-full flex justify-center items-center bg-slate-400/20 global-px mt-24 py-16">
           <section className="w-full max-w-[1440px] flex flex-col justify-center items-center bg-white rounded-md p-5 md:px-10">
             <h1 className="text-2xl font-bold mb-5">Proof of Payment</h1>
             <div className="w-full flex flex-col-reverse md:flex-row text-center overflow-hidden">
               <div className="flex-1 flex flex-col border border-black border-r-0 rounded-s-lg overflow-hidden">
-                <span className="w-full flex items-center bg-primary px-4 md:px-5 py-2">
+                <span className="w-full flex items-center bg-black px-4 md:px-5 py-2">
                   <Image
-                    src="/images/z-2.svg"
+                    src="/images/cine.svg"
                     alt="Logo"
-                    width={105}
-                    height={29}
+                    width={150}
+                    height={30}
                   />
                   <p className="text-white ml-auto mr-20">Admit One</p>
                 </span>
@@ -86,7 +86,7 @@ function TicketResult() {
                     </span>
                     <span className="flex-1 flex flex-col items-start">
                       <p className="text-gray-400 text-sm">Price</p>
-                      <h2 className="font-bold">{payment} रू</h2>
+                      <h2 className="font-bold">{payment} NPR</h2>
                     </span>
                   </div>
                 </span>
@@ -95,7 +95,7 @@ function TicketResult() {
               <div className="w-64 flex flex-col border border-black border-l-0 relative rounded-e-lg">
                 <div className="flex w-10 h-10 bg-base-100 rounded-full absolute -top-5 -left-5 border border-black"></div>
                 <div className="flex w-10 h-10 bg-base-100 rounded-full absolute -bottom-5 -left-5 border border-black"></div>
-                <span className="w-full py-2 flex justify-center items-center bg-primary rounded-se-lg">
+                <span className="w-full py-2 flex justify-center items-center bg-black rounded-se-lg">
                   <Image
                     src="/images/Tickitz-2.svg"
                     alt="Logo"

@@ -155,7 +155,7 @@ function Order() {
                     </div>
                     <div className="flex gap-1 md:gap-4">
                       <div className="w-4 h-4 md:w-6 md:h-6 rounded-md bg-info"></div>
-                      <p className="text-xs md:text-base">Love nest</p>
+                      <p className="text-xs md:text-base">Reserved</p>
                     </div>
                     <div className="flex gap-1 md:gap-4">
                       <div className="w-4 h-4 md:w-6 md:h-6 rounded-md bg-success"></div>
@@ -214,7 +214,7 @@ function Order() {
                   <div className="flex justify-between text-sm">
                     <p className="text-[#6B6B6B] ">One ticket price</p>
                     <p className="font-semibold text-[#14142B]">
-                      ${orderRedux.price}
+                      NPR{orderRedux.price}
                     </p>
                   </div>
                   <div className="flex justify-between  text-sm">
@@ -231,7 +231,7 @@ function Order() {
                     Total Payment
                   </p>
                   <p className="font-bold text-2xl text-font-primary ">
-                    ${orderRedux.price * orderRedux.dataSeat.length}
+                    NPR{orderRedux.price * orderRedux.dataSeat.length}
                   </p>
                 </div>
               </div>

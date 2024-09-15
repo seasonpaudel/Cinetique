@@ -90,7 +90,7 @@ function MovieDetails() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [router.isReady]);
 
-  const [location, setLocation] = useState("Kathmandu");
+  const [location, setLocation] = useState("Location");
   let date = new Date(dataMovie.release_date);
   let options = { year: "numeric", month: "long", day: "numeric" };
   let new_date = date.toLocaleDateString("en-US", options);
@@ -250,18 +250,10 @@ function MovieDetails() {
                         tabIndex={0}
                         className="dropdown-content menu menu-compact p-2 shadow bg-white text-black rounded-lg w-full"
                       >
-                        <li onClick={() => setLocation("Kathmandu")}>
-                          <a>Kathmandu</a>
+                        <li onClick={() => setLocation("All Cities")}>
+                          <a>All Cities</a>
                         </li>
-                        <li onClick={() => setLocation("Pokhara")}>
-                          <a> Pokhara</a>
-                        </li>
-                        <li onClick={() => setLocation("Chitwan")}>
-                          <a>Chitwan</a>
-                        </li>
-                        <li onClick={() => setLocation("Butwal")}>
-                          <a>Butwal</a>
-                        </li>
+                
                       </ul>
                     </div>
                   </div>

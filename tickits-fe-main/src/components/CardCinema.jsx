@@ -72,7 +72,7 @@ function CardCinema(props) {
           </div>
           <div className="flex justify-between mt-6">
             <p>Price</p>
-            <p className="font-semibold">${props.price}.00/seat</p>
+            <p className="font-semibold">NPR{props.price}250.00/seat</p>
           </div>
           <div className="flex justify-between items-center mt-4">
             <button

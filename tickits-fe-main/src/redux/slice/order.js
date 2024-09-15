@@ -14,7 +14,7 @@ const initialState = {
   totalPrice: null,
 };
 
-const orderSlice = createSlice({
+const orderslice = createSlice({
   name: "order",
   initialState,
   reducers: {
@@ -40,15 +40,13 @@ const orderSlice = createSlice({
       };
     },
     addSeats: (prevState, action) => {
-      // Cek apakah seat sudah ada pada array onSelected
       const index = prevState.dataSeat.indexOf(action.payload);
       if (index !== -1) {
-        // Jika sudah ada, hapus data pada indeks tersebut dari array
         const newSelected = [...prevState.dataSeat];
         newSelected.splice(index, 1);
         return { ...prevState, dataSeat: newSelected };
       } else {
-        // Jika belum ada, tambahkan seat ke array
+        
         const newSelected = [...prevState.dataSeat, action.payload];
         return { ...prevState, dataSeat: newSelected };
       }
@@ -56,7 +54,7 @@ const orderSlice = createSlice({
     addOrder: (prevState, action) => {
       return {
         ...prevState,
-        // dataSeat: action.payload.dataSeats,
+        
         theatstudioId: action.payload.theatstudioId,
         totalPrice: action.payload.totalPrice,
       };
@@ -67,5 +65,5 @@ const orderSlice = createSlice({
   },
 });
 
-export const orderAction = { ...orderSlice.actions };
-export default orderSlice.reducer;
+export const orderAction = { ...orderslice.actions };
+export default orderslice.reducer;
