@@ -16,13 +16,8 @@ function Header() {
   ];
     const locations =[
     {
-      key: "cgv-jaksel",
-      title: "CGV Jakarta Selatan",
-    },
-    
-    {
-      key:  "cgv-pvj-bandung",
-      title: "CGV Paris Van Java Bandung",
+      key: "all-cities",
+      title: "All Cities",
     },
   ];
 
