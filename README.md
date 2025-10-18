@@ -65,11 +65,11 @@ Develop a **modern and efficient movie booking web application** that enhances t
 ---
 
 ## 🚀 Future Enhancements
-- 🌍 Expand service to more cities and theaters across Nepal.  
-- 💡 Add **AI-powered movie recommendations** based on user preferences.  
-- 💬 Integrate **live chat** for user support.  
-- 📱 Develop a **mobile version** using React Native or Flutter.  
-- 💳 Add **real-world payment gateways** for live transactions.  
+-  Expand service to more cities and theaters across Nepal.  
+-  Add **AI-powered movie recommendations** based on user preferences.  
+-  Integrate **live chat** for user support.  
+-  Develop a **mobile version** using React Native or Flutter.  
+-  Add **real-world payment gateways** for live transactions.  
 
 ---
 
