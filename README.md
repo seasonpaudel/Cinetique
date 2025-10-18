@@ -1,9 +1,7 @@
 # 🎬 Cinetique – Movie Booking Web Application
 
 ## 📖 Overview
-**Cinetique** is a web-based movie booking platform designed to simplify how cinema enthusiasts in Nepal discover, reserve, and purchase tickets for their favorite films.  
-This project was developed as an academic learning initiative to explore full-stack web development, API integration, and modern UI/UX design using advanced web technologies.  
-
+**Cinetique** is a web-based movie booking platform designed to simplify how cinema enthusiasts in Nepal discover, reserve, and purchase tickets for their favorite films. 
 
 ---
 
